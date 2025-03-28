@@ -5,10 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>User Home - FantasyFIRST</title>
     <link rel="stylesheet" href="css/user-home.css">
-    <script src="jquery.js"></script> 
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script> 
         $(document).ready(function(){
-            console.log("jQuery is ready!");
+            $("#includedContent").load("navbar.html", function() {
+                // Callback function after loading the navbar
+                console.log("Navbar loaded successfully.");
+            });
         });
     </script> 
 </head>
@@ -17,7 +20,7 @@
     <div class="header">
         <img src="Bean-avocado-toast-3-500x500.jpg" alt="User Picture">
         <div class="stats-box" style="color: black">
-            <h2>User</h2>
+            <h2>User is loading correctly!</h2>
             <p>Total Games Played: 10</p>
             <p>Wins: 7</p>
             <p>Losses: 3</p>
