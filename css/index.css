@@ -1,0 +1,73 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+.circle-container {
+    position: relative;
+    width: 400px; /* Match the size of the .circle */
+    height: 400px; /* Match the size of the .circle */
+}
+
+.circle {
+    width: 400px;
+    height: 400px;
+    background-color: #333;
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 18px;
+    text-align: center;
+}
+
+.option {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: #555;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 14px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    transform-origin: center; /* Ensures scaling happens from the center */
+}
+
+/* Positioning the options around the circle */
+.option:nth-of-type(5) {
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.option:nth-of-type(2) {
+    top: 50%;
+    right: 0;
+    transform: translate(50%, -50%);
+}
+.option:nth-of-type(3) {
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 50%);
+}
+.option:nth-of-type(4) {
+    top: 50%;
+    left: 0;
+    transform: translate(-50%, -50%);
+}
+
+/* Hover effects */
+.option:hover {
+    transform: scale(1.2); /* Scale the button without moving it */
+    background-color: #777;
+}
