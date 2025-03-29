@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index - FantasyFIRST</title>
+    <link rel="stylesheet" href="css/league-home.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#includedContent").load("navbar.html", function() {
+                console.log("Navbar loaded successfully.");
+            });
+        });
+    </script>
+</head>
+<body>
+    <div id="includedContent"></div> <!-- Navbar -->
+    <div class="circle-container">
+        <div class="circle">
+            League Name
+            <div class="option">My Alliances</div>
+            <div class="option">Upcoming Drafts</div>
+            <div class="option">Standings</div>
+            <div class="option">Available Backups</div>
+        </div>
+    </div>
+</body>
+</html>
