@@ -14,36 +14,12 @@
             });
         });
     </script>
-<script> 
-        $(document).ready(function(){
-            $("#includedContent").load("navbar.html", function() {
-                // Callback function after loading the navbar
-                console.log("Navbar loaded successfully.");
-            });
-        });
-    </script>
-<script> 
-        $(document).ready(function(){
-            $("#includedContent").load("navbar.html", function() {
-                // Callback function after loading the navbar
-                console.log("Navbar loaded successfully.");
-            });
-        });
-    </script>
-    <script> 
-        $(document).ready(function(){
-            $("#includedContent").load("navbar.html", function() {
-                // Callback function after loading the navbar
-                console.log("Navbar loaded successfully.");
-            });
-        });
-    </script>
 </head>
 <body>
     <div id="includedContent"></div> <!-- Navbar -->
     <div class="signup-container">
         <h2>Sign Up</h2>
-        <form action="/form-submit.html" method="POST" onsubmit="validatePasswords(event)">
+        <form action="user-home.html" method="POST" onsubmit="validatePasswords(event)">
             <div class="form-group">
                 <label for="name">Full Name</label>
                 <input type="text" id="name" name="name" required>

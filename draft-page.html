@@ -1,0 +1,63 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - FantasyFIRST</title>
+    <link rel="stylesheet" href="css/draft-page.css"> <!-- Import the CSS file -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#navbar").load("navbar.html", function() {
+                console.log("Navbar loaded successfully.");
+            }); 
+        });
+    </script>
+</head>
+<body>
+    <div id="navbar"></div>
+    <div>Ticker goes here</div>
+    <section class="container">
+        <div id="col-1">
+            <h1>Your Alliance</h1>
+            <div class="team-info">
+                <img src="path/to/image1.jpg" alt="Team Logo" class="team-logo">
+                <div class="team-name">Team XXXX - &lt;TEAM NAME&gt;</div>
+                <div class="team-stats">
+                    <div>Pick</div>
+                    <div>FP Last Year</div>
+                    <div>Projected FP</div>
+                </div>
+            </div>
+            <div class="team-info">
+                <img src="path/to/image2.jpg" alt="Team Logo" class="team-logo">
+                <div class="team-name">Team XXXX - &lt;TEAM NAME&gt;</div>
+                <div class="team-stats">
+                    <div>Pick</div>
+                    <div>FP Last Year</div>
+                    <div>Projected FP</div>
+                </div>
+            </div>
+        </div>
+        <div id="col-2">
+            <h1>Available Teams</h1>
+            <div class="team-info-alt">
+                <img src="path/to/image3.jpg" alt="Team Logo" class="team-logo">
+                <div class="team-name">Team YYYY - &lt;TEAM NAME&gt;</div>
+                <div class="team-stats">
+                    <div>PS</div>
+                    <div>FP Last Year</div>
+                    <div>Projected FP</div>
+                </div>
+            </div>
+            <div class="team-info-alt">
+                <img src="path/to/image4.jpg" alt="Team Logo" class="team-logo">
+                <div class="team-name">Team ZZZZ - &lt;TEAM NAME&gt;</div>
+                <div class="team-stats">
+                    <div>PS</div>
+                    <div>FP Last Year</div>
+                    <div>Projected FP</div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+

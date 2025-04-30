@@ -9,4 +9,6 @@ function validatePasswords(event) {
         errorMessage.textContent = "Passwords do not match!";
         errorMessage.style.display = "block";
     }
+
+    console.log("run it back");
 }

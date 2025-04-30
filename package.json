@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/nvarap/FantasyFIRST#readme",
   "dependencies": {
+    "firebase": "^11.5.0",
     "jquery": "^3.7.1"
   }
 }

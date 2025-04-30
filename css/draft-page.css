@@ -1,0 +1,126 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* General container styling */
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px; /* Reduce padding between the columns */
+}
+
+/* Column 1 styling */
+#col-1 {
+    width: 40%; /* Decrease the width of the column */
+    background-color: #f9f9f9;
+    padding: 15px; /* Reduce padding inside the column */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Team info styling */
+.team-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    margin-bottom: 10px; 
+    padding: 10px 15px; 
+    border: 1px solid #ddd;
+    border-radius: 8px; 
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    font-family: Arial, sans-serif;
+}
+
+/* Team name and details */
+.team-info .team-name {
+    font-weight: bold;
+    font-size: 1rem; /* Reduce font size */
+    color: #333;
+    flex: 2; /* Take up more space */
+}
+
+/* Additional stats */
+.team-info .team-stats {
+    display: flex;
+    justify-content: space-between;
+    flex: 3; /* Spread out stats evenly */
+    font-size: 0.9rem; /* Reduce font size */
+    color: #666;
+}
+
+.team-info .team-stats div {
+    text-align: center;
+    flex: 1; /* Equal width for each stat */
+}
+
+/* Hover effect for better interactivity */
+.team-info:hover {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15); /* Slightly stronger shadow on hover */
+    transform: translateY(-1px); /* Smaller lift effect */
+    transition: all 0.2s ease-in-out;
+}
+
+/* Column 2 styling */
+#col-2 {
+    width: 60%; /* Adjust the width of the column */
+    background-color: #f9f9f9;
+    padding: 15px; /* Internal padding */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Alternate team info styling for column 2 */
+.team-info-alt {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    margin-bottom: 10px; /* Spacing between items */
+    padding: 10px 15px; /* Internal padding */
+    border: 1px solid #ddd; /* Lighter border */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    font-family: Arial, sans-serif;
+}
+
+/* Team name and details for column 2 */
+.team-info-alt .team-name {
+    font-weight: bold;
+    font-size: 1rem; /* Font size for team name */
+    color: #333;
+    flex: 2; /* Take up more space */
+}
+
+/* Additional stats for column 2 */
+.team-info-alt .team-stats {
+    display: flex;
+    justify-content: space-between;
+    flex: 3; /* Spread out stats evenly */
+    font-size: 0.9rem; /* Font size for stats */
+    color: #666; /* Slightly darker text color */
+}
+
+.team-info-alt .team-stats div {
+    text-align: center;
+    flex: 1; /* Equal width for each stat */
+}
+
+/* Hover effect for column 2 items */
+.team-info-alt:hover {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15); /* Slightly stronger shadow on hover */
+    transform: translateY(-1px); /* Lift effect */
+    transition: all 0.2s ease-in-out;
+}
+
+/* Styling for team logos */
+.team-logo {
+    width: 50px; /* Set a fixed width for the logo */
+    height: 50px; /* Set a fixed height for the logo */
+    border-radius: 50%; /* Make the image circular */
+    margin-right: 15px; /* Add spacing between the image and text */
+    object-fit: cover; /* Ensure the image fits within the circle */
+}
