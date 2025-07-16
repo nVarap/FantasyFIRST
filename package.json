@@ -4,7 +4,8 @@
   "description": "A fantasy game for the FIRST Robotics Competition",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "npm run open",
+    "open": "concurrently \"http-server -a localhost -p 8000\" \"sleepms 1000 && open http://localhost:8000/index.html\""
   },
   "repository": {
     "type": "git",
@@ -17,7 +18,13 @@
   },
   "homepage": "https://github.com/nvarap/FantasyFIRST#readme",
   "dependencies": {
+    "dotenv": "^16.5.0",
     "firebase": "^11.5.0",
-    "jquery": "^3.7.1"
+    "jquery": "^3.7.1",
+    "live-server": "^1.2.2"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.0",
+    "http-server": "^14.1.1"
   }
 }

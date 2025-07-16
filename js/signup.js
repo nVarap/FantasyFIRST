@@ -1,3 +1,5 @@
+// Import dotenv
+
 // Confirm Password Validation
 function validatePasswords(event) {
     const password = document.getElementById("password").value;
@@ -8,6 +10,7 @@ function validatePasswords(event) {
         const errorMessage = document.getElementById("error-message");
         errorMessage.textContent = "Passwords do not match!";
         errorMessage.style.display = "block";
+        console.log(process.env); // Log environment variables
     }
 
     console.log("run it back");

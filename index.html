@@ -6,13 +6,6 @@
     <title>Home - FantasyFIRST</title>
     <link rel="stylesheet" href="css/index.css"> <!-- Import the CSS file -->
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-    <script>
-        $(document).ready(function(){
-            $("#navbar").load("navbar.html", function() {
-                console.log("Navbar loaded successfully.");
-            });
-        });
-    </script>
 </head>
 <body>
     <div id="navbar"></div>
@@ -20,9 +13,11 @@
         <h1>Welcome to FantasyFIRST</h1>
         <p>Your one-stop platform for fantasy games and stats tracking.</p>
         <div class="button-container">
-            <a href="signup.html" class="button">Sign Up</a>
-            <a href="user-home.html" class="button">User Home</a>
+            <a id="signinout" href="signup.html" class="button">Sign Up</a>
+            <a id="signhome" href="signin.html" class="button">Sign In</a>
+            <a id="leaguehome" href="league-home.html" class="button">League Home</a>
         </div>
     </div>
+    <script src="js/index.js"></script>
 </body>
 </html>

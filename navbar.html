@@ -1,9 +1,30 @@
-
 <body>
  <nav class="navbar">
         <div style="padding-left: 10px"><a href="index.html">FantasyFIRST</a></div>
-        <div> <a href="signin.html" style="padding-right: 12px;">Sign In</a> </div>
+        <div>
+            <a id="navbar-user-link" href="signin.html" style="padding-right: 12px;">Sign In</a>
+        </div>
     </nav>    
+    <script>
+        // Check login state and update navbar link
+         $(document).ready(function(){
+            setTimeout(() => {
+                console.log("Checking login state...");
+                const userLink = document.getElementById("navbar-user-link");
+                const isLoggedIn = localStorage.getItem("login"); // Replace with actual login state check
+
+                if (isLoggedIn) {
+                    const username = localStorage.getItem("username") || "User"; // Get username from localStorage
+                    userLink.textContent = username + "'s Home";
+                    userLink.href = "user-home.html"; // Redirect to user home if logged in
+                } else {
+                    userLink.textContent = "Sign In";
+                    userLink.href = "signin.html"; // Redirect to sign in if not logged in
+            }
+            }, 10);
+
+        });
+    </script>
 </body>
 
 <style>
